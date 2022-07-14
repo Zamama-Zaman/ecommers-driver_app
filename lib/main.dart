@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ugks_limousine_driver_app/presentation/pages/home_page.dart';
+import 'package:ugks_limousine_driver_app/presentation/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: const Color(0xFF010101),
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }
