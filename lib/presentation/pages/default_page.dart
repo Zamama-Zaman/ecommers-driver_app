@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ugks_limousine_driver_app/presentation/pages/home_page.dart';
+import 'package:ugks_limousine_driver_app/presentation/pages/offers_page.dart';
+import 'package:ugks_limousine_driver_app/presentation/pages/planned_page.dart';
 
 class DefaultPage extends StatefulWidget {
   const DefaultPage({Key? key}) : super(key: key);
@@ -24,8 +26,8 @@ class _DefaultPageState extends State<DefaultPage> {
 
   final _screens = <Widget>[
     HomePage(),
-    Center(child: Text("Offers Page", style: TextStyle(color: Colors.white))),
-    Center(child: Text("Planned Page", style: TextStyle(color: Colors.white))),
+    OfferPage(),
+    PlannedPage(),
     Center(child: Text("Finished Page", style: TextStyle(color: Colors.white))),
   ];
 

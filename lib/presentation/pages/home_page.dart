@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ugks_limousine_driver_app/presentation/pages/news_feed_page.dart';
 import 'package:ugks_limousine_driver_app/presentation/pages/profile_page.dart';
 import 'package:ugks_limousine_driver_app/size_config.dart';
 
@@ -19,11 +20,21 @@ class HomePage extends StatelessWidget {
           height: getProportionateScreenHeight(21),
         ),
         automaticallyImplyLeading: false,
-        leading: Center(
-          child: SvgPicture.asset(
-            "assets/icons/menu_icon.svg",
-            height: getProportionateScreenHeight(25),
-            width: getProportionateScreenWidth(32),
+        leading: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => NewsFeedPage(),
+              ),
+            );
+          },
+          child: Center(
+            child: SvgPicture.asset(
+              "assets/icons/menu_icon.svg",
+              height: getProportionateScreenHeight(25),
+              width: getProportionateScreenWidth(32),
+            ),
           ),
         ),
         centerTitle: true,
