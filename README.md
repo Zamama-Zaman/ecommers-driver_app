@@ -1,4 +1,4 @@
-# ecommers_driver_app
+# ecommers_rider_app
 
 A new Flutter project.
 
